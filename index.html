@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+
+        label{
+            display: block;
+        }
+
+        body{
+            margin: 10%;
+            margin-left: 40%;
+        }
+
+        button{
+            margin: 1rem 3rem;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+        <label>Value1:</label>
+        <input type="text" id="value1">
+        <label>Operator:</label>
+        <select id="Operator">
+            <option value="Add">Add</option>
+            <option value="Min">Minus</option>
+            <option value="Mul">Multiply</option>
+            <option value="Div">Divide</option>
+        </select>
+        <label>Value2:</label>
+        <input type="text" id="value2"><br/>
+        <button onclick="cal()">Calculate</button>
+    
+    <p>The result:  <span id="result"></span></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
